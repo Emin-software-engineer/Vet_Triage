@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Emin\\Desktop\\vet-triage\\Vet-Triage\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2190DEAF-6EF8-5D40-5E6A-AA0CACB940B6}|Vet-Triage\\Vet-Triage.csproj|c:\\users\\emin\\desktop\\vet-triage\\vet-triage\\vet-triage\\triagepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2190DEAF-6EF8-5D40-5E6A-AA0CACB940B6}|Vet-Triage\\Vet-Triage.csproj|solutionrelative:vet-triage\\triagepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2190DEAF-6EF8-5D40-5E6A-AA0CACB940B6}|Vet-Triage\\Vet-Triage.csproj|c:\\users\\emin\\desktop\\vet-triage\\vet-triage\\vet-triage\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2190DEAF-6EF8-5D40-5E6A-AA0CACB940B6}|Vet-Triage\\Vet-Triage.csproj|solutionrelative:vet-triage\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2190DEAF-6EF8-5D40-5E6A-AA0CACB940B6}|Vet-Triage\\Vet-Triage.csproj|c:\\users\\emin\\desktop\\vet-triage\\vet-triage\\vet-triage\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2190DEAF-6EF8-5D40-5E6A-AA0CACB940B6}|Vet-Triage\\Vet-Triage.csproj|solutionrelative:vet-triage\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2190DEAF-6EF8-5D40-5E6A-AA0CACB940B6}|Vet-Triage\\Vet-Triage.csproj|c:\\users\\emin\\desktop\\vet-triage\\vet-triage\\vet-triage\\triagepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2190DEAF-6EF8-5D40-5E6A-AA0CACB940B6}|Vet-Triage\\Vet-Triage.csproj|solutionrelative:vet-triage\\triagepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TriagePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Emin\\Desktop\\vet-triage\\Vet-Triage\\Vet-Triage\\TriagePage.xaml",
+              "RelativeDocumentMoniker": "Vet-Triage\\TriagePage.xaml",
+              "ToolTip": "C:\\Users\\Emin\\Desktop\\vet-triage\\Vet-Triage\\Vet-Triage\\TriagePage.xaml",
+              "RelativeToolTip": "Vet-Triage\\TriagePage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-14T21:03:52.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Emin\\Desktop\\vet-triage\\Vet-Triage\\Vet-Triage\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Vet-Triage\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\Emin\\Desktop\\vet-triage\\Vet-Triage\\Vet-Triage\\MainPage.xaml",
+              "RelativeToolTip": "Vet-Triage\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-14T20:31:41.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TriagePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Emin\\Desktop\\vet-triage\\Vet-Triage\\Vet-Triage\\TriagePage.xaml.cs",
+              "RelativeDocumentMoniker": "Vet-Triage\\TriagePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Emin\\Desktop\\vet-triage\\Vet-Triage\\Vet-Triage\\TriagePage.xaml.cs",
+              "RelativeToolTip": "Vet-Triage\\TriagePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T20:58:18.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Emin\\Desktop\\vet-triage\\Vet-Triage\\Vet-Triage\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Vet-Triage\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Emin\\Desktop\\vet-triage\\Vet-Triage\\Vet-Triage\\MainPage.xaml.cs",
+              "RelativeToolTip": "Vet-Triage\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T20:32:02.564Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

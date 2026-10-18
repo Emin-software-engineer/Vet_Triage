@@ -1,0 +1,10 @@
+<api type="debug" assembly-name="Vet-Triage" mvid="790ac84c31b2463db79115e259f5a0dd">
+  <java-to-managed>
+    <entry java-name="crc649a3c10d9b724f16c/MainActivity" managed-name="Vet_Triage.MainActivity, Vet-Triage" managed-type-token-id="33554442" />
+    <entry java-name="crc649a3c10d9b724f16c/MainApplication" managed-name="Vet_Triage.MainApplication, Vet-Triage" managed-type-token-id="33554443" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="crc649a3c10d9b724f16c/MainActivity" managed-name="Vet_Triage.MainActivity, Vet-Triage" managed-type-token-id="33554442" />
+    <entry java-name="crc649a3c10d9b724f16c/MainApplication" managed-name="Vet_Triage.MainApplication, Vet-Triage" managed-type-token-id="33554443" />
+  </managed-to-java>
+</api>

@@ -1,0 +1,15 @@
+<api>
+  <jcw-types>
+    <type name="MainActivity" package="crc649a3c10d9b724f16c" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiAppCompatActivity" partial_assembly_qualified_name="Vet_Triage.MainActivity, Vet-Triage">
+      <constructors>
+        <constructor name="MainActivity" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+        <constructor name="MainActivity" method="n_.ctor:(I)V:" jni_signature="(I)V" managed_parameters="System.Int32, System.Private.CoreLib" params="int p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </constructors>
+    </type>
+    <type name="MainApplication" package="crc649a3c10d9b724f16c" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiApplication" is_application="True" partial_assembly_qualified_name="Vet_Triage.MainApplication, Vet-Triage" application_constructor="MainApplication" />
+  </jcw-types>
+  <acw-types partial-assembly-name="Vet-Triage" module-name="Vet-Triage.dll">
+    <type assembly-qualified-name="Vet_Triage.MainActivity, Vet-Triage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="vet_triage.MainActivity" java-key="crc649a3c10d9b724f16c.MainActivity" managed-key="Vet_Triage.MainActivity" partial-assembly-qualified-name="Vet_Triage.MainActivity, Vet-Triage" />
+    <type assembly-qualified-name="Vet_Triage.MainApplication, Vet-Triage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="vet_triage.MainApplication" java-key="crc649a3c10d9b724f16c.MainApplication" managed-key="Vet_Triage.MainApplication" partial-assembly-qualified-name="Vet_Triage.MainApplication, Vet-Triage" />
+  </acw-types>
+</api>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vet_Triage.TriagePage"
+             Title="Yeni Vaka"
+             BackgroundColor="#F4F7F5">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="22" Spacing="20">
+
+            <Label Text="🐾 Yeni Vaka Oluştur"
+                   FontSize="27"
+                   FontAttributes="Bold"
+                   TextColor="#173D31"/>
+
+            <Label Text="Evcil dostunun bilgilerini ve gözlemlediğin belirtileri gir."
+                   FontSize="14"
+                   TextColor="#65766E"/>
+
+            <Border BackgroundColor="White"
+                    Stroke="#E2EBE5"
+                    StrokeShape="RoundRectangle 18"
+                    Padding="18">
+                <VerticalStackLayout Spacing="14">
+
+                    <Label Text="HAYVAN BİLGİLERİ"
+                           FontSize="13"
+                           FontAttributes="Bold"
+                           TextColor="#176B52"/>
+
+                    <Label Text="Hayvanın adı"
+                           TextColor="#173D31"/>
+                    <Entry x:Name="PetNameEntry"
+                           Placeholder="Örn. Pamuk"
+                           BackgroundColor="#F4F7F5"
+                           TextColor="Black"/>
+
+                    <Label Text="Hayvan türü"
+                           TextColor="#173D31"/>
+                    <Picker x:Name="AnimalPicker"
+                            Title="Tür seç"
+                            BackgroundColor="#F4F7F5"
+                            TextColor="Black"
+                            TitleColor="Black">
+                        <Picker.Items>
+                            <x:String>Kedi</x:String>
+                            <x:String>Köpek</x:String>
+                            <x:String>Diğer</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Grid ColumnDefinitions="*,*"
+                          ColumnSpacing="12">
+                        <VerticalStackLayout Grid.Column="0"
+                                             Spacing="6">
+                            <Label Text="Yaş (yıl)"
+                                   TextColor="#173D31"/>
+                            <Entry x:Name="AgeEntry"
+                                   Placeholder="Örn. 3"
+                                   Keyboard="Numeric"
+                                   BackgroundColor="#F4F7F5"
+                                   TextColor="Black"/>
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Grid.Column="1"
+                                             Spacing="6">
+                            <Label Text="Kilo (kg)"
+                                   TextColor="#173D31"/>
+                            <Entry x:Name="WeightEntry"
+                                   Placeholder="Örn. 5"
+                                   Keyboard="Numeric"
+                                   BackgroundColor="#F4F7F5"
+                                   TextColor="Black"/>
+                                   
+                        </VerticalStackLayout>
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border BackgroundColor="White"
+                    Stroke="#E2EBE5"
+                    StrokeShape="RoundRectangle 18"
+                    Padding="18">
+                <VerticalStackLayout Spacing="13">
+
+                    <Label Text="GÖZLEMLENEN BELİRTİLER"
+                           FontSize="13"
+                           FontAttributes="Bold"
+                           TextColor="#176B52"/>
+
+                    <Label Text="Gözlemlediğin tüm belirtileri seç."
+                           FontSize="13"
+                           TextColor="#65766E"/>
+
+                    <BoxView HeightRequest="1"
+                             Color="#E2EBE5"/>
+
+                    <Label Text="⚠️ Acil belirtiler"
+                           FontAttributes="Bold"
+                           TextColor="#A83232"/>
+
+                    <HorizontalStackLayout Spacing="10">
+                        <CheckBox x:Name="BreathingCheck"
+                                  Color="#176B52"/>
+                        <Label Text="Solunum güçlüğü"
+                               VerticalOptions="Center"
+                               TextColor="#173D31"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="10">
+                        <CheckBox x:Name="SeizureCheck"
+                                  Color="#176B52"/>
+                        <Label Text="Nöbet veya bilinç kaybı"
+                               VerticalOptions="Center"
+                               TextColor="#173D31"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="10">
+                        <CheckBox x:Name="BleedingCheck"
+                                  Color="#176B52"/>
+                        <Label Text="Yoğun kanama"
+                               VerticalOptions="Center"
+                               TextColor="#173D31"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="10">
+                        <CheckBox x:Name="PoisonCheck"
+                                  Color="#176B52"/>
+                        <Label Text="Zehirlenme şüphesi"
+                               VerticalOptions="Center"
+                               TextColor="#173D31"/>
+                    </HorizontalStackLayout>
+
+                    <BoxView HeightRequest="1"
+                             Color="#E2EBE5"/>
+
+                    <Label Text="Diğer belirtiler"
+                           FontAttributes="Bold"
+                           TextColor="#173D31"/>
+
+                    <HorizontalStackLayout Spacing="10">
+                        <CheckBox x:Name="VomitingCheck"
+                                  Color="#176B52"/>
+                        <Label Text="Kusma"
+                               VerticalOptions="Center"
+                               TextColor="#173D31"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="10">
+                        <CheckBox x:Name="WeaknessCheck"
+                                  Color="#176B52"/>
+                        <Label Text="Halsizlik"
+                               VerticalOptions="Center"
+                               TextColor="#173D31"/>
+                    </HorizontalStackLayout>
+
+                    <Label Text="Ek açıklama"
+                           TextColor="#173D31"/>
+
+                    <Editor x:Name="NotesEditor"
+                            Placeholder="Belirtiler ne zaman başladı?"
+                            AutoSize="TextChanges"
+                            MinimumHeightRequest="90"
+                            BackgroundColor="#F4F7F5"
+                            TextColor="Black"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <Button Text="Belirtileri Değerlendir"
+                    Clicked="OnEvaluateClicked"
+                    BackgroundColor="#176B52"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="14"
+                    HeightRequest="54"/>
+
+            <Label Text="Bu değerlendirme teşhis değildir. Acil belirtilerde sonucu beklemeden veteriner desteğine başvur."
+                   FontSize="12"
+                   TextColor="#795B3E"
+                   HorizontalTextAlignment="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

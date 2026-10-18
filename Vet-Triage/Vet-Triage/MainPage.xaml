@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vet_Triage.MainPage">
+
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#F4F7F5">
+            <VerticalStackLayout Padding="20" Spacing="22">
+
+                <!-- ÜST BAŞLIK -->
+                <Grid ColumnDefinitions="Auto,*,Auto"
+                  ColumnSpacing="12"
+                  VerticalOptions="Center">
+
+                    <Border Grid.Column="0"
+                        BackgroundColor="#176B52"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 15"
+                        Padding="12">
+                        <Label Text="🐾"
+                           FontSize="28"
+                           TextColor="White"/>
+                    </Border>
+
+                    <VerticalStackLayout Grid.Column="1"
+                                     VerticalOptions="Center"
+                                     Spacing="3">
+                        <Label Text="Vet-Triage"
+                           FontSize="25"
+                           FontAttributes="Bold"
+                           TextColor="#173D31"/>
+                        <Label Text="Evcil dostların için güvenli yönlendirme"
+                           FontSize="11"
+                           TextColor="#65766E"/>
+                    </VerticalStackLayout>
+
+                    <Border Grid.Column="2"
+                        BackgroundColor="White"
+                        Stroke="#E1EAE4"
+                        StrokeShape="RoundRectangle 14"
+                        Padding="11"
+                        VerticalOptions="Center">
+                        <Label Text="🔔"
+                           FontSize="21"/>
+                    </Border>
+                </Grid>
+
+                <!-- KARŞILAMA ALANI -->
+                <Border BackgroundColor="#176B52"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 24"
+                    Padding="22">
+
+                    <VerticalStackLayout Spacing="13">
+
+                        <Label Text="VETERİNER DESTEK PLATFORMU"
+                           FontSize="11"
+                           CharacterSpacing="1.2"
+                           TextColor="#C7E9D8"
+                           FontAttributes="Bold"/>
+
+                        <Label Text="Onlar konuşamaz, &#x0a;Biz onlar için buradayız."
+                           FontSize="27"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           LineBreakMode="WordWrap"/>
+
+                        <Label Text="Belirtileri değerlendir, uygun veteriner kliniğine ulaş."
+                           FontSize="14"
+                           TextColor="#E2F2E9"
+                           LineBreakMode="WordWrap"/>
+
+                        <Button Text="Acil Durum Değerlendirmesi  →"
+                            Clicked="OnNewCaseClicked"
+                            BackgroundColor="#FFFFFF"
+                            TextColor="#176B52"
+                            FontAttributes="Bold"
+                            CornerRadius="13"
+                            HeightRequest="52"/>
+
+                        <Label Text="Bu uygulama veteriner teşhisinin yerine geçmez."
+                           FontSize="10"
+                           TextColor="#D5E9DE"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- HIZLI İŞLEMLER -->
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="Hızlı İşlemler"
+                       FontSize="21"
+                       FontAttributes="Bold"
+                       TextColor="#173D31"/>
+
+                    <Label Text="İhtiyacın olan bölüme kolayca ulaş."
+                       FontSize="13"
+                       TextColor="#75837C"/>
+                </VerticalStackLayout>
+
+                <Grid ColumnDefinitions="*,*"
+                  RowDefinitions="Auto,Auto"
+                  ColumnSpacing="12"
+                  RowSpacing="12">
+
+                    <!-- YENİ VAKA -->
+                    <Border Grid.Row="0" Grid.Column="0"
+                        BackgroundColor="White"
+                        Stroke="#E2EBE5"
+                        StrokeShape="RoundRectangle 18"
+                        Padding="15">
+                        <VerticalStackLayout Spacing="10">
+                            <Border BackgroundColor="#FDE9E5"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 12"
+                                Padding="10"
+                                HorizontalOptions="Start">
+                                <Label Text="🚨" FontSize="25"/>
+                            </Border>
+                            <Label Text="Yeni Vaka"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="#173D31"/>
+                            <Label Text="Belirtileri gir ve aciliyeti değerlendir."
+                               FontSize="12"
+                               TextColor="#75837C"
+                               LineBreakMode="WordWrap"/>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <!-- KLİNİKLER -->
+                    <Border Grid.Row="0" Grid.Column="1"
+                        BackgroundColor="White"
+                        Stroke="#E2EBE5"
+                        StrokeShape="RoundRectangle 18"
+                        Padding="15">
+                        <VerticalStackLayout Spacing="10">
+                            <Border BackgroundColor="#DDF3E8"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 12"
+                                Padding="10"
+                                HorizontalOptions="Start">
+                                <Label Text="📍" FontSize="25"/>
+                            </Border>
+                            <Label Text="Klinik Bul"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="#173D31"/>
+                            <Label Text="Yakındaki veteriner kliniklerini keşfet."
+                               FontSize="12"
+                               TextColor="#75837C"
+                               LineBreakMode="WordWrap"/>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <!-- HAYVANLAR -->
+                    <Border Grid.Row="1" Grid.Column="0"
+                        BackgroundColor="White"
+                        Stroke="#E2EBE5"
+                        StrokeShape="RoundRectangle 18"
+                        Padding="15">
+                        <VerticalStackLayout Spacing="10">
+                            <Border BackgroundColor="#E5ECFF"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 12"
+                                Padding="10"
+                                HorizontalOptions="Start">
+                                <Label Text="🐶" FontSize="25"/>
+                            </Border>
+                            <Label Text="Hayvanlarım"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="#173D31"/>
+                            <Label Text="Evcil dostlarının bilgilerini yönet."
+                               FontSize="12"
+                               TextColor="#75837C"
+                               LineBreakMode="WordWrap"/>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <!-- VAKA GEÇMİŞİ -->
+                    <Border Grid.Row="1" Grid.Column="1"
+                        BackgroundColor="White"
+                        Stroke="#E2EBE5"
+                        StrokeShape="RoundRectangle 18"
+                        Padding="15">
+                        <VerticalStackLayout Spacing="10">
+                            <Border BackgroundColor="#F0E5FF"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 12"
+                                Padding="10"
+                                HorizontalOptions="Start">
+                                <Label Text="📋" FontSize="25"/>
+                            </Border>
+                            <Label Text="Vaka Geçmişi"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="#173D31"/>
+                            <Label Text="Önceki vaka kayıtlarını görüntüle."
+                               FontSize="12"
+                               TextColor="#75837C"
+                               LineBreakMode="WordWrap"/>
+                        </VerticalStackLayout>
+                    </Border>
+                </Grid>
+
+                <!-- ACİL UYARI -->
+                <Border BackgroundColor="#FFF3E4"
+                    Stroke="#F4D8B2"
+                    StrokeShape="RoundRectangle 18"
+                    Padding="16">
+                    <Grid ColumnDefinitions="Auto,*"
+                      ColumnSpacing="12">
+                        <Label Text="⚠️"
+                           FontSize="25"
+                           VerticalOptions="Start"/>
+                        <VerticalStackLayout Grid.Column="1"
+                                         Spacing="5">
+                            <Label Text="Hayati belirtileri göz ardı etme"
+                               FontSize="15"
+                               FontAttributes="Bold"
+                               TextColor="#8A4C16"/>
+                            <Label Text="Solunum güçlüğü, nöbet, yoğun kanama veya zehirlenme şüphesinde uygulamayı beklemeden acil veteriner desteğine başvur."
+                               FontSize="12"
+                               TextColor="#795B3E"
+                               LineBreakMode="WordWrap"/>
+                        </VerticalStackLayout>
+                    </Grid>
+                </Border>
+
+                <!-- ALT BİLGİ -->
+                <Label Text="Vet-Triage  •  Evcil dostların için"
+                   FontSize="11"
+                   TextColor="#849189"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,0,0,10"/>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+
+
+
+</ContentPage>
